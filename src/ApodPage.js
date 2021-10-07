@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
 import React,{useState, useEffect} from "react";
 import info from './const'
 import axios from "axios";
 
 function ApodPage() {
-    const {apodApi, personalKey} = info
+    
     const [data, setdata] = useState(null)
     
     useEffect(() => {
+        const {apodApi, personalKey} = info
         fetchData(apodApi, personalKey)
     }, [])
     
@@ -23,7 +23,7 @@ function ApodPage() {
         <React.Fragment>
             
             <h2>{data.title}</h2>
-            <img src={data.url}/>
+            <img alt='' src={data.url}/>
             <p>{data.date}</p>
             <p>{data.explanation}</p>
             <h6>{data.copyright}</h6>
