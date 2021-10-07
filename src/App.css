@@ -1,5 +1,11 @@
+body {
+  background-color: #FADCD9;
+}
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
@@ -39,8 +45,8 @@
 .nav-wrapper {
   display: flex;
   width:100%;
-  height: 10vh;
-  background: transparent;
+  height: 15vh;
+  background: #F9F1F0;
   justify-content: space-evenly;
 }
 .nav-buttons-wrapper {
@@ -49,11 +55,41 @@
   align-items: center;
   width: 100px;
   height: 50px;
-  background: grey;
+  background: #F79489;
   border-radius: 20px;
   margin:4%;
 }
 .nav-buttons-wrapper:hover {
   opacity: 80%;
   transform: scale(120%);
+}
+.description {
+  width: 70%;
+}
+.gallery-wrapper {
+  width:700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F79489;
+  margin: 3%;
+}
+.left-arrow {
+  margin: 3%;
+  border: 100px solid transparent;
+  border-right: 50px solid red;
+}
+.right-arrow {
+  margin: 3%;
+  border: 100px solid transparent;
+  border-left: 50px solid red;
+}
+.right-arrow:hover {
+  transform: scale(120%);
+  opacity: 70%;
+}
+.left-arrow:hover {
+  transform: scale(120%);
+  opacity: 70%;
 }

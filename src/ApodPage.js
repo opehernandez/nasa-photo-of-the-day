@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from "react";
 import info from './const'
 import axios from "axios";
+import './App.css';
 
 function ApodPage() {
     
@@ -22,10 +23,10 @@ function ApodPage() {
         data &&
         <React.Fragment>
             
-            <h2>{data.title}</h2>
+            <h1>{data.title}</h1>
             <img alt='' src={data.url}/>
             <p>{data.date}</p>
-            <p>{data.explanation}</p>
+            <p className='description'>{data.explanation}</p>
             <h6>{data.copyright}</h6>
 
         </React.Fragment>
