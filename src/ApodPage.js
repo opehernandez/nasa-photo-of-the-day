@@ -16,7 +16,7 @@ function ApodPage() {
         axios.get(`${url}${key}`)
         .then(resp => {
              setdata(resp.data)
-        })
+        }).catch(err => console.error(err))
     }
     
     return (

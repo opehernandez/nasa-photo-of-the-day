@@ -57,7 +57,7 @@ body {
   height: 50px;
   background: #F79489;
   border-radius: 20px;
-  margin:4%;
+  margin:3%;
 }
 .nav-buttons-wrapper:hover {
   opacity: 80%;
@@ -67,29 +67,42 @@ body {
   width: 70%;
 }
 .gallery-wrapper {
-  width:700px;
+  width:800px;
+  min-width: 700px;
   height: 700px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background: #F79489;
   margin: 3%;
+  border-radius: 20px;
 }
 .left-arrow {
-  margin: 3%;
-  border: 100px solid transparent;
-  border-right: 50px solid red;
+  margin-left : 5%;
 }
 .right-arrow {
   margin: 3%;
-  border: 100px solid transparent;
-  border-left: 50px solid red;
 }
 .right-arrow:hover {
-  transform: scale(120%);
+  transform: scale(150%);
   opacity: 70%;
 }
 .left-arrow:hover {
-  transform: scale(120%);
+  transform: scale(150%);
   opacity: 70%;
+}
+.info-panel {
+  margin: 3%;
+  width: 20%;
+  min-width: 300px;
+  height: 200px;
+  background: #F79489;
+  border-radius: 20px;
+}
+.content-wrapper {
+  display:flex;
+  width: 100%;
+}
+.info-description, info-title {
+  margin: 1%;
 }
