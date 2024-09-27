@@ -1,5 +1,11 @@
+body {
+  background-color: #FADCD9;
+}
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +41,68 @@
   to {
     transform: rotate(360deg);
   }
+}
+.nav-wrapper {
+  display: flex;
+  width:100%;
+  height: 15vh;
+  background: #F9F1F0;
+  justify-content: space-evenly;
+}
+.nav-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  background: #F79489;
+  border-radius: 20px;
+  margin:3%;
+}
+.nav-buttons-wrapper:hover {
+  opacity: 80%;
+  transform: scale(120%);
+}
+.description {
+  width: 70%;
+}
+.gallery-wrapper {
+  width:800px;
+  min-width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #F79489;
+  margin: 3%;
+  border-radius: 20px;
+}
+.left-arrow {
+  margin-left : 5%;
+}
+.right-arrow {
+  margin: 3%;
+}
+.right-arrow:hover {
+  transform: scale(150%);
+  opacity: 70%;
+}
+.left-arrow:hover {
+  transform: scale(150%);
+  opacity: 70%;
+}
+.info-panel {
+  margin: 3%;
+  width: 20%;
+  min-width: 300px;
+  height: 200px;
+  background: #F79489;
+  border-radius: 20px;
+}
+.content-wrapper {
+  display:flex;
+  width: 100%;
+}
+.info-description, info-title {
+  margin: 1%;
 }
